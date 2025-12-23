@@ -121,3 +121,20 @@
     @apply bg-background text-foreground;
   }
 }
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  .card {
+    border: 1px solid #e5e7eb !important;
+    box-shadow: none !important;
+  }
+  button, input, .search-container {
+    display: none !important;
+  }
+}
